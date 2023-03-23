@@ -1,0 +1,14 @@
+---
+
+- name: Install
+  gather_facts: false
+  hosts: all
+  connection: local
+  tasks: 
+
+
+    - name: Apt Install htop
+      ansible.builtin.apt:
+        name: htop
+        state: latest
+        update_cache: yes
