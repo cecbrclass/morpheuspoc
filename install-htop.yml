@@ -3,6 +3,7 @@
 - name: Install
   gather_facts: false
   hosts: all
+  become: true
   connection: local
   tasks: 
 
