@@ -3,7 +3,8 @@
 - name: Install
   gather_facts: false
   hosts: all
-  become: true
+#  become: true
+#  Do not assume root, to execute playbooks over command bus
   connection: local
   tasks: 
 
