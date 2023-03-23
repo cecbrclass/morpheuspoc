@@ -1,0 +1,13 @@
+---
+
+- name: Install
+  gather_facts: false
+  hosts: all
+  connection: local
+  tasks: 
+
+    - name: Apt Install nginx
+      ansible.builtin.apt:
+        name: nginx
+        state: latest
+        update_cache: yes
