@@ -1,11 +1,10 @@
 ---
-
+#  Used for verifying if Ansible is running locally on a Morpheus appliance
 - name: TestAnsibleLocal
   gather_facts: true
   hosts: all
 #  become: true
 #  Do not assume root, to execute playbooks over command bus
-#  Used for verifying if Ansible is running locally on a Morpheus appliance
   connection: local
   tasks: 
     - name: Print all available facts
