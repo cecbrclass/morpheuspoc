@@ -8,8 +8,8 @@
   connection: local
   tasks: 
 
-    - name: Apt Install nginx
-      ansible.builtin.apt:
+    - name: install nginx
+      apt:
         name: nginx
         state: latest
         update_cache: yes
